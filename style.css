@@ -12,25 +12,32 @@
 #background {
     width: 100vw;
     height: 100vh;
-    background: lightblue;
+    background: hsl(212, 45%, 89%);
     justify-content: center;
     align-items: center;
 }
 
 #qr-component-card {
     flex-direction: column;
-    background: #ffffff;
+    background: white;
     justify-content: center;
     align-items: center;
     padding:0.8rem;
     border-radius: 20px;
-    max-width: 15em;
+    min-width: 14em;
+    max-width: 17em;
+    gap: 10px;
 }
-
+#qr-code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #qr-code-container > img {
-    width: 15em;
+    width: 98%;
     height: auto;
     border-radius: 25px;
+    justify-self: center;
 }
 
 .copy-container {
@@ -38,4 +45,22 @@
 }
 .copy-container > p, .copy-container > h2 {
     text-align: center;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+.copy-container > p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+.copy-container > h2 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0px;
+    line-height: 120%;
 }
